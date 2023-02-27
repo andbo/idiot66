@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "idiot66"
+  site-url: "https://andbo.github.io/idiot66"
+  description: "Idiot66 a not so dum game"
+  repo-branch: main
+  repo-url: "https://github.com/andbo/idiot66"
