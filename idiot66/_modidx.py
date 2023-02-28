@@ -30,7 +30,7 @@ d = { 'settings': { 'branch': 'main',
                                                                                      'idiot66/routers/deck.py'),
                                       'idiot66.routers.deck.PlayingCard.value': ( 'routers/deck.html#playingcard.value',
                                                                                   'idiot66/routers/deck.py'),
-                                      'idiot66.routers.deck.aroute': ('routers/deck.html#aroute', 'idiot66/routers/deck.py'),
+                                      'idiot66.routers.deck.deck': ('routers/deck.html#deck', 'idiot66/routers/deck.py'),
                                       'idiot66.routers.deck.gethand': ('routers/deck.html#gethand', 'idiot66/routers/deck.py'),
                                       'idiot66.routers.deck.make_idiot_deck': ( 'routers/deck.html#make_idiot_deck',
                                                                                 'idiot66/routers/deck.py')}}}
