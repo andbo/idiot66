@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "core.html",
+    "href": "core.html",
+    "title": "core",
+    "section": "",
+    "text": "source\n\nfoo\n\n foo ()"
+  },
+  {
+    "objectID": "routers/aroute.html",
+    "href": "routers/aroute.html",
+    "title": "aRoute",
+    "section": "",
+    "text": "Router\nThis is just to test a route in the FastAPI app.\n\nsource\n\naroute\n\n aroute ()\n\n\nsource\n\n\nsecond\n\n second ()\n\n\n\n\nTesting the route\nThis part of the notebook is to test the route. Welcome to the new world where code and test live together.\n\nclient = TestClient(router)\n\n\ndef test_read_main():\n    response = client.get(\"/aroute\")\n    assert response.status_code == 200\n    assert response.json() == {\"msg\": \"Welcome in aroute!2\"}\ntest_read_main()"
+  },
+  {
+    "objectID": "routers/deck.html",
+    "href": "routers/deck.html",
+    "title": "Deck",
+    "section": "",
+    "text": "source\n\nmake_idiot_deck\n\n make_idiot_deck ()\n\n\nsource\n\n\nHand\n\n Hand (cards:List[__main__.PlayingCard])\n\nCreate a new model by parsing and validating input data from keyword arguments.\nRaises ValidationError if the input data cannot be parsed to form a valid model.\n\nsource\n\n\nDeck\n\n Deck (cards:List[__main__.PlayingCard])\n\nInitialize self. See help(type(self)) for accurate signature.\n\nsource\n\n\nPlayingCard\n\n PlayingCard (rank:Literal['9','J','Q','K','5','A'],\n              suit:Literal['♣','♢','♡','♠'])\n\nCreate a new model by parsing and validating input data from keyword arguments.\nRaises ValidationError if the input data cannot be parsed to form a valid model.\n\nsource\n\n\ngethand\n\n gethand ()\n\n\nsource\n\n\ndeck\n\n deck ()"
+  },
+  {
+    "objectID": "main.html",
+    "href": "main.html",
+    "title": "Main loop for FastAPI",
+    "section": "",
+    "text": "source\n\nroot\n\n root ()"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "idiot66",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation."
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "idiot66",
+    "section": "Install",
+    "text": "Install\npip install idiot66"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "idiot66",
+    "section": "How to use",
+    "text": "How to use\nFill me in please! Don’t forget code examples:\nWhenever you change main, a route or add a route. You will have to run nbdev_export so that your package is updated.\n\nnbdev_export: Export notebooks in path to Python modules\n\nAfter running above comamand, you can start the FastAPI app with the following command from the root folder (i.e. fastapi-nbdev):\n\nuvicorn idiot66.main:app –reload\n\nLastly, run nbdev_prepare. This is last, since you want to export and run your changes before running the tests.\n\nnbdev_prepare: Export, test, and clean notebooks, and render README if needed\n\n\n1+1\n\n2"
+  }
+]
