@@ -6,6 +6,7 @@ __all__ = ['app', 'root']
 # %% ../nbs/01_main.ipynb 3
 from fastapi import FastAPI
 from .routers import aroute
+from .routers import deck
 
 # %% ../nbs/01_main.ipynb 4
 app = FastAPI(title="Idiot66", description="API for playing the game Idiot66", version="0.0.1")
@@ -14,6 +15,9 @@ app = FastAPI(title="Idiot66", description="API for playing the game Idiot66", v
 app.include_router(aroute.router)
 
 # %% ../nbs/01_main.ipynb 6
+app.include_router(deck.router)
+
+# %% ../nbs/01_main.ipynb 7
 @app.get("/")
 async def root():
     return {"message": "Hello World"}
