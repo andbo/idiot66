@@ -12,7 +12,7 @@ router = APIRouter()
 # %% ../../nbs/routers/00_aroute.ipynb 6
 @router.get('/aroute')
 async def aroute():
-    return {"message": "Welcome in aroute!"}
+    return {"msg": "Welcome in aroute!"}
 
 # %% ../../nbs/routers/00_aroute.ipynb 7
 @router.get('/second')
