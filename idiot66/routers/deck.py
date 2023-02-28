@@ -3,13 +3,13 @@
 # %% auto 0
 __all__ = ['router', 'RANKS', 'SUITS', 'values', 'deck', 'PlayingCard', 'Deck', 'Hand', 'make_idiot_deck', 'gethand']
 
-# %% ../../nbs/routers/01_deck.ipynb 2
+# %% ../../nbs/routers/01_deck.ipynb 3
 from fastapi import APIRouter
 
-# %% ../../nbs/routers/01_deck.ipynb 3
+# %% ../../nbs/routers/01_deck.ipynb 4
 router = APIRouter()
 
-# %% ../../nbs/routers/01_deck.ipynb 4
+# %% ../../nbs/routers/01_deck.ipynb 5
 from typing import List, Literal
 from pydantic import BaseModel 
 import random
@@ -76,13 +76,13 @@ def make_idiot_deck():
 
 deck = Deck(cards=sorted(make_idiot_deck()))
 
-# %% ../../nbs/routers/01_deck.ipynb 5
+# %% ../../nbs/routers/01_deck.ipynb 6
 @router.get('/hand')
 async def gethand() -> Hand:
     hand = Hand(cards=deck.draw_cards(5))
     return hand
 
-# %% ../../nbs/routers/01_deck.ipynb 6
+# %% ../../nbs/routers/01_deck.ipynb 7
 @router.get('/deck')
 async def deck():
     return {"message": "Welcome in aroute within deck!"}
